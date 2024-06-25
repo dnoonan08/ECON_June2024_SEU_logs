@@ -1,0 +1,1134 @@
+Last failed login: Sat Jun 22 13:19:48 CDT 2024 from 192.168.1.187 on ssh:notty
+There was 1 failed login attempt since the last successful login.
+Last login: Sat Jun 22 10:10:08 2024 from 192.168.1.187
+]0;HGCAL_dev@localhost:~[?1034h[HGCAL_dev@192.168.1.44 ~]$ cd n 
+acampbell/             .bashrc~               device-tree/           .emacs.d/              .inputrc               .lesshst               .python_history        TID_Run/
+.bash_history          bbbam/                 devmem                 firmware/              .ipython/              .local/                setupATB.sh            .vim/
+.bash_logout           .cache/                dnoonan/               gcumming/              jsw/                   mylittledt/            SEU_Run/               .viminfo
+.bash_profile          cmantill/              econd-sw-cleanTag.tgz  .gitconfig             .jupyter/              oldKeys/               SEU_test_Jun222024/    .vscode-server/
+.bash_profile~         crondump.txt           econ_test/             .gitconfig~            jyoti/                 .pki/                  source/                ymiao/
+.bashrc                cron_test.txt          eertorer/              I2C_1MHz.sh            LegacyTestSoftware/    .pytest_cache/         .ssh/                  
+[HGCAL_dev@192.168.1.44 ~]$ cd SE     sudo -fw   fw-loader load econd t-test                              cd SEU_
+SEU_Run/            SEU_test_Jun222024/ 
+[HGCAL_dev@192.168.1.44 ~]$ cd SEU_test_Jun222024/econd-sw/
+align.py              compare_i2c.py        econd_testvectors/    econ_tools/           .gitignore            output_vector.py      profile_i2c.py        set_fclk0             test_TID/
+capture_packets.py    configs/              econ_i2c.py           econt_setup.py        .gitmodules           pattern.py            profile_setup.py      set_frequency.py      uhal_blocks.py
+check_fw.py           daq_utils.py          econ_io.py            econt_testvectors/    gpib_controls/        pll_allowed.py        __pycache__/          test_bench/           uhal_cli.py
+click_utils.py        data_capture.py       econ_sc_manual.py     eportrx_phasescan.py  input_vector.py       plltester_setup.py    README.md             test_coverage/        uhal_reset.py
+common_pytest/        docs/                 econ_sc.py            fast_control.py       log_utils.py          pll_vcocbscan.py      requirements.txt      test_radiation/       utils/
+compare_daq.py        econd_setup.py        econ_support.py       .git/                 output_compare.py     power_control.py      server/               test_standalone/      
+[HGCAL_dev@192.168.1.44 ~]$ cd SEU_test_Jun222024/econd-sw/
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ python ce heck_fw.py 
+Unknown firmware
+   firmware-name : econ-t2-tester-socket.bit
+   git-desc      : 9e5953f-dirty
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ cd test_radiation/
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw/test_radiation[HGCAL_dev@192.168.1.44 test_radiation]$ ls
+conftest.py  lcap_asic.csv  printdifferences.py  pytest.ini                         test_ECONT_proton_prbs_seu.py  test_proton_prbs_seu.py
+[0m[48;5;10;38;5;16mdata[0m         lcap_emu.csv   [38;5;27m__pycache__[0m          randidx_l1a_64tot_125to3400bx.txt  test_ECONT_proton_seu.py       test_proton_seu.py
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw/test_radiation[HGCAL_dev@192.168.1.44 test_radiation]$ lscd test_radiation/python check_fw.py cd SEU_test_Jun222024/econd-sw/exit[K[2Plsexit[2Plsexit[2Pls -sail[4Pexitdu -h -d 1cd[Klspwddf -h [4Plsrm Chip9_data/*ls[Kdf -h [3Ppwd[1Plscddu -h -d 1[6Pexitls -sail[Kexit[2Plsexit[2Plsexitcd SEU_test_Jun222024/econd-sw/[12Ppython check_fw.py [1Pcd test_radiation/ls[K[Kgit     cd ..
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ ls
+[0m[38;5;34malign.py[0m            [38;5;34mcompare_daq.py[0m   [38;5;27mdocs[0m               [38;5;34mecon_sc_manual.py[0m  [38;5;27mecont_testvectors[0m     log_utils.py       [38;5;34mplltester_setup.py[0m  [38;5;27m__pycache__[0m       [38;5;34mset_frequency.py[0m  [38;5;27mtest_TID[0m
+[38;5;34mcapture_packets.py[0m  [38;5;34mcompare_i2c.py[0m   [38;5;34mecond_setup.py[0m     [38;5;34mecon_sc.py[0m         [38;5;34meportrx_phasescan.py[0m  [38;5;34moutput_compare.py[0m  [38;5;34mpll_vcocbscan.py[0m    README.md         [38;5;27mtest_bench[0m        uhal_blocks.py
+[38;5;34mcheck_fw.py[0m         [38;5;27mconfigs[0m          [38;5;27mecond_testvectors[0m  [38;5;34mecon_support.py[0m    [38;5;34mfast_control.py[0m       [38;5;34moutput_vector.py[0m   [38;5;34mpower_control.py[0m    requirements.txt  [38;5;27mtest_coverage[0m     [38;5;34muhal_cli.py[0m
+click_utils.py      daq_utils.py     econ_i2c.py        [38;5;27mecon_tools[0m         [38;5;27mgpib_controls[0m         pattern.py         profile_i2c.py      [38;5;27mserver[0m            [38;5;27mtest_radiation[0m    [38;5;34muhal_reset.py[0m
+[38;5;27mcommon_pytest[0m       [38;5;34mdata_capture.py[0m  [38;5;34mecon_io.py[0m         [38;5;34mecont_setup.py[0m     [38;5;34minput_vector.py[0m       pll_allowed.py     profile_setup.py    [38;5;34mset_fclk0[0m         [38;5;27mtest_standalone[0m   [38;5;27mutils[0m
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ c git remote update
+Fetching origin
+remote: Enumerating objects: 16, done.[K
+remote: Counting objects:   6% (1/16)[Kremote: Counting objects:  12% (2/16)[Kremote: Counting objects:  18% (3/16)[Kremote: Counting objects:  25% (4/16)[Kremote: Counting objects:  31% (5/16)[Kremote: Counting objects:  37% (6/16)[Kremote: Counting objects:  43% (7/16)[Kremote: Counting objects:  50% (8/16)[Kremote: Counting objects:  56% (9/16)[Kremote: Counting objects:  62% (10/16)[Kremote: Counting objects:  68% (11/16)[Kremote: Counting objects:  75% (12/16)[Kremote: Counting objects:  81% (13/16)[Kremote: Counting objects:  87% (14/16)[Kremote: Counting objects:  93% (15/16)[Kremote: Counting objects: 100% (16/16)[Kremote: Counting objects: 100% (16/16), done.[K
+remote: Compressing objects:   6% (1/16)[Kremote: Compressing objects:  12% (2/16)[Kremote: Compressing objects:  18% (3/16)[Kremote: Compressing objects:  25% (4/16)[Kremote: Compressing objects:  31% (5/16)[Kremote: Compressing objects:  37% (6/16)[Kremote: Compressing objects:  43% (7/16)[Kremote: Compressing objects:  50% (8/16)[Kremote: Compressing objects:  56% (9/16)[Kremote: Compressing objects:  62% (10/16)[Kremote: Compressing objects:  68% (11/16)[Kremote: Compressing objects:  75% (12/16)[Kremote: Compressing objects:  81% (13/16)[Kremote: Compressing objects:  87% (14/16)[Kremote: Compressing objects:  93% (15/16)[Kremote: Compressing objects: 100% (16/16)[Kremote: Compressing objects: 100% (16/16), done.[K
+Unpacking objects:   6% (1/16)   Unpacking objects:  12% (2/16)   Unpacking objects:  18% (3/16)   Unpacking objects:  25% (4/16)   Unpacking objects:  31% (5/16)   Unpacking objects:  37% (6/16)   Unpacking objects:  43% (7/16)   Unpacking objects:  50% (8/16)   Unpacking objects:  56% (9/16)   Unpacking objects:  62% (10/16)   Unpacking objects:  68% (11/16)   Unpacking objects:  75% (12/16)   Unpacking objects:  81% (13/16)   remote: Total 16 (delta 8), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  87% (14/16)   Unpacking objects:  93% (15/16)   Unpacking objects: 100% (16/16)   Unpacking objects: 100% (16/16), done.
+From ssh://gitlab.cern.ch:7999/hgcal-daq-sw/econd-sw
+   4015218..9588c26  gec_seuprep_June2024 -> origin/gec_seuprep_June2024
+ * [new tag]         June2024_SEU_Saturday_v2 -> June2024_SEU_Saturday_v2
+From ssh://gitlab.cern.ch:7999/hgcal-daq-sw/econd-sw
+ * [new tag]         June2024_SEU_Saturday_start -> June2024_SEU_Saturday_start
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ i git log
+[?1h=[33mcommit 4015218d76de61c3bca5829c203d40c408bd2f4e[m[m
+Author: Jon Wilson <jsw@fnal.gov>[m
+Date:   Fri Jun 21 15:41:11 2024 -0500[m
+[m
+    Adjust wb_adr_cnt for ECONT PRBS[m
+[m
+[33mcommit 561bc969d4e3b18e8c7f1cf895209d915072fd0f[m[m
+Author: Jon Wilson <jsw@fnal.gov>[m
+Date:   Fri Jun 21 15:22:11 2024 -0500[m
+[m
+    Typo fix[m
+[m
+[33mcommit 641e9e33e2f9def748646625ab33fba3e33bd5de[m[m
+Author: Danny Noonan <daniel.christopher.noonan@cern.ch>[m
+Date:   Fri Jun 21 11:27:17 2024 -0500[m
+[m
+    add mid-beam fifo read fixes to main seu scripts[m
+[m
+[33mcommit 9ecfb4914b674956d100aef4ae57c37a600db61f[m[m
+Author: Danny Noonan <daniel.christopher.noonan@cern.ch>[m
+Date:   Fri Jun 21 11:21:43 2024 -0500[m
+[m
+    remove lc_emu captures, fix capture mid-beam[m
+[m
+[33mcommit bde00b093d44090bc328636876512d0bb2701cea[m[m
+Author: Danny Noonan <daniel.christopher.noonan@cern.ch>[m
+Date:   Fri Jun 21 11:19:48 2024 -0500[m
+[m
+    add option to only read nwords, rather than full fifo occupancy[m
+[m
+[33mcommit c35570001bc83e9550baf33877045203d642c1e4[m[m
+Author: Jon Wilson <jsw@fnal.gov>[m
+Date:   Thu Jun 20 12:13:33 2024 -0500[m
+[m
+    Harmonized all four SEU scripts, ECOND/T and prbs/regular[m
+[m
+[33mcommit a88c1ca9f2d7f9e81e442deb3a57d722aa1e767d[m[m
+Author: Jon Wilson <jsw@fnal.gov>[m
+Date:   Thu Jun 20 11:56:51 2024 -0500[m
+[m
+    Harmonize ECONT and ECOND, and fix ECOND prebeam and postbeam capture[m
+[m
+[33mcommit 4b966f08c07a7ed24994a3786667a9b46aa73214[m[m
+Merge: 20120c3 421a34a[m
+Author: Jon Wilson <jsw@fnal.gov>[m
+Date:   Thu Jun 20 11:40:35 2024 -0500[m
+[m
+    Merge branch 'dn_econt_seuprep' into gec_seuprep_June2024[m
+[m
+[33mcommit 20120c3f656e839b99162d9e71d972ed345261bd[m[m
+Author: Jon Wilson <jsw@fnal.gov>[m
+Date:   Thu Jun 20 11:38:03 2024 -0500[m
+[m
+    Stop both ECOND runs after 20 minutes[m
+:[K[K[?1l>]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ git logremote updatelog[Kremote update
+Fetching origin
+git checkout ]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ git checkout June2024_SEU_Saturday_v2
+Note: checking out 'June2024_SEU_Saturday_v2'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b new_branch_name
+
+HEAD is now at 9588c26... move register differences earlier in postbeam, before dropping from printouts
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ git log
+[?1h=[33mcommit 9588c265184ec140fedeba5cf3959251903d6fa6[m[m
+Author: Danny Noonan <daniel.christopher.noonan@cern.ch>[m
+Date:   Sat Jun 22 12:42:15 2024 -0500[m
+[m
+    move register differences earlier in postbeam, before dropping from printouts[m
+[m
+[33mcommit 6d42bc7437966a4537db909d25fe931cf187825a[m[m
+Author: Ramneet Kaur <rkaur5@crimson.ua.edu>[m
+Date:   Sat Jun 22 10:49:06 2024 -0500[m
+[m
+    fix timestamp in console logger[m
+[m
+[33mcommit 647ef40da2d46cd571524977983a2bcfba0dd09f[m[m
+Author: Ramneet Kaur <rkaur5@crimson.ua.edu>[m
+Date:   Sat Jun 22 10:44:49 2024 -0500[m
+[m
+    fix console and logging[m
+[m
+[33mcommit 5e6358cab6a19933a01f7df13d1ed5f34f92926c[m[m
+Author: Danny Noonan <daniel.christopher.noonan@cern.ch>[m
+Date:   Sat Jun 22 09:37:33 2024 -0500[m
+[m
+    Add power monitoring script[m
+[m
+[33mcommit 4015218d76de61c3bca5829c203d40c408bd2f4e[m[m
+Author: Jon Wilson <jsw@fnal.gov>[m
+Date:   Fri Jun 21 15:41:11 2024 -0500[m
+[m
+    Adjust wb_adr_cnt for ECONT PRBS[m
+[m
+[33mcommit 561bc969d4e3b18e8c7f1cf895209d915072fd0f[m[m
+Author: Jon Wilson <jsw@fnal.gov>[m
+Date:   Fri Jun 21 15:22:11 2024 -0500[m
+[m
+    Typo fix[m
+[m
+[33mcommit 641e9e33e2f9def748646625ab33fba3e33bd5de[m[m
+Author: Danny Noonan <daniel.christopher.noonan@cern.ch>[m
+Date:   Fri Jun 21 11:27:17 2024 -0500[m
+[m
+    add mid-beam fifo read fixes to main seu scripts[m
+[m
+[33mcommit 9ecfb4914b674956d100aef4ae57c37a600db61f[m[m
+Author: Danny Noonan <daniel.christopher.noonan@cern.ch>[m
+Date:   Fri Jun 21 11:21:43 2024 -0500[m
+[m
+    remove lc_emu captures, fix capture mid-beam[m
+[m
+[33mcommit bde00b093d44090bc328636876512d0bb2701cea[m[m
+Author: Danny Noonan <daniel.christopher.noonan@cern.ch>[m
+Date:   Fri Jun 21 11:19:48 2024 -0500[m
+[m
+    add option to only read nwords, rather than full fifo occupancy[m
+[m
+:[K[K[?1l>]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw[HGCAL_dev@192.168.1.44 econd-sw]$ git logcheckout June2024_SEU_Saturday_v2[20Premote updatelog[Kremote updatels[Kcd ..[3Plscd test_radiation/ls[Kcd ..     cd 
+align.py               configs/               econ_io.py             eportrx_phasescan.py   log_utils.py           pll_vcocbscan.py       server/                test_TID/
+capture_packets.py     daq_utils.py           econ_sc_manual.py      fast_control.py        MonitorPowerLevels.py  power_control.py       set_fclk0              uhal_blocks.py
+check_fw.py            data_capture.py        econ_sc.py             .git/                  output_compare.py      profile_i2c.py         set_frequency.py       uhal_cli.py
+click_utils.py         docs/                  econ_support.py        .gitignore             output_vector.py       profile_setup.py       test_bench/            uhal_reset.py
+common_pytest/         econd_setup.py         econ_tools/            .gitmodules            pattern.py             __pycache__/           test_coverage/         utils/
+compare_daq.py         econd_testvectors/     econt_setup.py         gpib_controls/         pll_allowed.py         README.md              test_radiation/        
+compare_i2c.py         econ_i2c.py            econt_testvectors/     input_vector.py        plltester_setup.py     requirements.txt       test_standalone/       
+[HGCAL_dev@192.168.1.44 econd-sw]$ cd econd_        d e test_
+test_bench/      test_coverage/   test_radiation/  test_standalone/ test_TID/        
+[HGCAL_dev@192.168.1.44 econd-sw]$ cd test_radiation/
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw/test_radiation[HGCAL_dev@192.168.1.44 test_radiation]$ pytest test_ECONT_proton_seu.py --target ECONT --run_number 0 --chip 2[1P[1@9[1@9[1@9
+[1m=========================================================================================== test session starts ============================================================================================[0m
+platform linux -- Python 3.6.8, pytest-7.0.1, pluggy-1.0.0 -- /usr/bin/python3.6
+metadata: {'Python': '3.6.8', 'Platform': 'Linux-4.19.0-xilinx-v2019.2-aarch64-with-centos-7.9.2009-AltArch', 'Packages': {'pytest': '7.0.1', 'py': '1.11.0', 'pluggy': '1.0.0'}, 'Plugins': {'metadata': '1.11.0', 'anyio': '3.3.1', 'order': '1.1.0', 'repeat': '0.9.1', 'json-report': '1.5.0'}}
+rootdir: /home/HGCAL_dev/SEU_test_Jun222024/econd-sw/test_radiation, configfile: pytest.ini
+plugins: metadata-1.11.0, anyio-3.3.1, order-1.1.0, repeat-0.9.1, json-report-1.5.0
+[1mcollecting ... [0m[1mcollecting 3 items                                                                                                                                                                                         [0m[1mcollected 3 items                                                                                                                                                                                          [0m
+
+test_ECONT_proton_seu.py::test_prebeam_setup 
+PreBeam Setup
+Automatic CapBank Selection: 30
+Phase select settings: [4, 5, 5, 5, 5, 6, 7, 8, 7, 9, 9, 9], TrackMode: 1
+Word Count: 186201188, Error Count: 0
+[32mPASSED[0m[32m                                                                                                                                                  [ 33%][0m
+test_ECONT_proton_seu.py::test_beam_running 
+Beam Running
+Starting Stream Compare:  Use CTRL-C to interupt and start register comparison
+tmr_names: Aligner_Global_tmr_err_cnt_aligner,ChAligner_00_tmr_err_cnt_chan_aligner,ChAligner_00_tmr_err_cnt_chan_err,ChAligner_00_tmr_err_cnt_chan_eprxgrp,ChAligner_01_tmr_err_cnt_chan_aligner,ChAligner_01_tmr_err_cnt_chan_err,ChAligner_01_tmr_err_cnt_chan_eprxgrp,ChAligner_02_tmr_err_cnt_chan_aligner,ChAligner_02_tmr_err_cnt_chan_err,ChAligner_02_tmr_err_cnt_chan_eprxgrp,ChAligner_03_tmr_err_cnt_chan_aligner,ChAligner_03_tmr_err_cnt_chan_err,ChAligner_03_tmr_err_cnt_chan_eprxgrp,ChAligner_04_tmr_err_cnt_chan_aligner,ChAligner_04_tmr_err_cnt_chan_err,ChAligner_04_tmr_err_cnt_chan_eprxgrp,ChAligner_05_tmr_err_cnt_chan_aligner,ChAligner_05_tmr_err_cnt_chan_err,ChAligner_05_tmr_err_cnt_chan_eprxgrp,ChAligner_06_tmr_err_cnt_chan_aligner,ChAligner_06_tmr_err_cnt_chan_err,ChAligner_06_tmr_err_cnt_chan_eprxgrp,ChAligner_07_tmr_err_cnt_chan_aligner,ChAligner_07_tmr_err_cnt_chan_err,ChAligner_07_tmr_err_cnt_chan_eprxgrp,ChAligner_08_tmr_err_cnt_chan_aligner,ChAligner_08_tmr_err_cnt_chan_err,ChAligner_08_tmr_err_cnt_chan_eprxgrp,ChAligner_09_tmr_err_cnt_chan_aligner,ChAligner_09_tmr_err_cnt_chan_err,ChAligner_09_tmr_err_cnt_chan_eprxgrp,ChAligner_10_tmr_err_cnt_chan_aligner,ChAligner_10_tmr_err_cnt_chan_err,ChAligner_10_tmr_err_cnt_chan_eprxgrp,ChAligner_11_tmr_err_cnt_chan_aligner,ChAligner_11_tmr_err_cnt_chan_err,ChAligner_11_tmr_err_cnt_chan_eprxgrp,ClocksAndResets_Global_tmr_err_cnt_clocks_and_resets,ERx_Global_tmr_err_cnt_erx,ETx_Global_tmr_err_cnt_etx,EprxGrpTop_Global_tmr_err_cnt_eprxgrp_top,ErrTop_Global_tmr_err_cnt_err_top,FCtrl_Global_tmr_err_cnt_fast_ctrl_decoder,Misc_TMR_ERR_CNT_Global_tmr_err_cnt_misc,Config_Global_tmr_err_cnt_mfc,Algo_Global_tmr_err_cnt_alg,FormatterBuffer_Global_tmr_err_cnt_fmtbuf,Encoder_Global_tmr_err_cnt_auto_encoder
+other_registers_names: FCtrl_Global_lock_count,FCtrl_Global_unassigned_fcmd_count,FCtrl_Global_fc_error_fcmd_count,ClocksAndResets_Global_pusm_left_ready_action_counter,ClocksAndResets_Global_lock_filter_loss_of_lock_count
+[32m'2024-06-22 13:28:15.001029 Word Count: 55940470, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:28:16.001021 Word Count: 95944892, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:28:17.000999 Word Count: 135943644, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:28:18.002081 Word Count: 175987103, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:28:19.001000 Word Count: 215943551, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:28:20.001017 Word Count: 255944257, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:28:21.001041 Word Count: 295944779, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:28:22.001000 Word Count: 335943301, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:28:23.000102 Word Count: 375907276, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+^CStopping
+[32mPASSED[0m[32m                                                                                                                                                   [ 66%][0m
+test_ECONT_proton_seu.py::test_postbeam_checks No difference between ASIC before and after configuration
+[32mPASSED[0m[32m                                                                                                                                                [100%][0m
+
+----------------------------------------------------------------------------------------------- JSON report ------------------------------------------------------------------------------------------------
+report auto-save skipped
+[32m============================================================================================ [32m[1m3 passed[0m[32m in 41.14s[0m[32m ============================================================================================[0m
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw/test_radiation[HGCAL_dev@192.168.1.44 test_radiation]$ pytest test_ECONT_proton_seu.py --target ECONT --run_number 999 --chip 2[HGCAL_dev@192.168.1.44 test_radiation]$ [Kpytest test_ECONT_proton_seu.py --target ECONT --run_number 999 --chip 2[1P[1P[1P[1@1[1@4
+[1m=========================================================================================== test session starts ============================================================================================[0m
+platform linux -- Python 3.6.8, pytest-7.0.1, pluggy-1.0.0 -- /usr/bin/python3.6
+metadata: {'Python': '3.6.8', 'Platform': 'Linux-4.19.0-xilinx-v2019.2-aarch64-with-centos-7.9.2009-AltArch', 'Packages': {'pytest': '7.0.1', 'py': '1.11.0', 'pluggy': '1.0.0'}, 'Plugins': {'metadata': '1.11.0', 'anyio': '3.3.1', 'order': '1.1.0', 'repeat': '0.9.1', 'json-report': '1.5.0'}}
+rootdir: /home/HGCAL_dev/SEU_test_Jun222024/econd-sw/test_radiation, configfile: pytest.ini
+plugins: metadata-1.11.0, anyio-3.3.1, order-1.1.0, repeat-0.9.1, json-report-1.5.0
+[1mcollecting ... [0m[1mcollecting 3 items                                                                                                                                                                                         [0m[1mcollected 3 items                                                                                                                                                                                          [0m
+
+test_ECONT_proton_seu.py::test_prebeam_setup 
+PreBeam Setup
+Automatic CapBank Selection: 29
+Phase select settings: [5, 5, 5, 4, 5, 6, 7, 8, 7, 9, 10, 10], TrackMode: 1
+Word Count: 186454436, Error Count: 0
+[32mPASSED[0m[32m                                                                                                                                                  [ 33%][0m
+test_ECONT_proton_seu.py::test_beam_running 
+Beam Running
+Starting Stream Compare:  Use CTRL-C to interupt and start register comparison
+tmr_names: Aligner_Global_tmr_err_cnt_aligner,ChAligner_00_tmr_err_cnt_chan_aligner,ChAligner_00_tmr_err_cnt_chan_err,ChAligner_00_tmr_err_cnt_chan_eprxgrp,ChAligner_01_tmr_err_cnt_chan_aligner,ChAligner_01_tmr_err_cnt_chan_err,ChAligner_01_tmr_err_cnt_chan_eprxgrp,ChAligner_02_tmr_err_cnt_chan_aligner,ChAligner_02_tmr_err_cnt_chan_err,ChAligner_02_tmr_err_cnt_chan_eprxgrp,ChAligner_03_tmr_err_cnt_chan_aligner,ChAligner_03_tmr_err_cnt_chan_err,ChAligner_03_tmr_err_cnt_chan_eprxgrp,ChAligner_04_tmr_err_cnt_chan_aligner,ChAligner_04_tmr_err_cnt_chan_err,ChAligner_04_tmr_err_cnt_chan_eprxgrp,ChAligner_05_tmr_err_cnt_chan_aligner,ChAligner_05_tmr_err_cnt_chan_err,ChAligner_05_tmr_err_cnt_chan_eprxgrp,ChAligner_06_tmr_err_cnt_chan_aligner,ChAligner_06_tmr_err_cnt_chan_err,ChAligner_06_tmr_err_cnt_chan_eprxgrp,ChAligner_07_tmr_err_cnt_chan_aligner,ChAligner_07_tmr_err_cnt_chan_err,ChAligner_07_tmr_err_cnt_chan_eprxgrp,ChAligner_08_tmr_err_cnt_chan_aligner,ChAligner_08_tmr_err_cnt_chan_err,ChAligner_08_tmr_err_cnt_chan_eprxgrp,ChAligner_09_tmr_err_cnt_chan_aligner,ChAligner_09_tmr_err_cnt_chan_err,ChAligner_09_tmr_err_cnt_chan_eprxgrp,ChAligner_10_tmr_err_cnt_chan_aligner,ChAligner_10_tmr_err_cnt_chan_err,ChAligner_10_tmr_err_cnt_chan_eprxgrp,ChAligner_11_tmr_err_cnt_chan_aligner,ChAligner_11_tmr_err_cnt_chan_err,ChAligner_11_tmr_err_cnt_chan_eprxgrp,ClocksAndResets_Global_tmr_err_cnt_clocks_and_resets,ERx_Global_tmr_err_cnt_erx,ETx_Global_tmr_err_cnt_etx,EprxGrpTop_Global_tmr_err_cnt_eprxgrp_top,ErrTop_Global_tmr_err_cnt_err_top,FCtrl_Global_tmr_err_cnt_fast_ctrl_decoder,Misc_TMR_ERR_CNT_Global_tmr_err_cnt_misc,Config_Global_tmr_err_cnt_mfc,Algo_Global_tmr_err_cnt_alg,FormatterBuffer_Global_tmr_err_cnt_fmtbuf,Encoder_Global_tmr_err_cnt_auto_encoder
+other_registers_names: FCtrl_Global_lock_count,FCtrl_Global_unassigned_fcmd_count,FCtrl_Global_fc_error_fcmd_count,ClocksAndResets_Global_pusm_left_ready_action_counter,ClocksAndResets_Global_lock_filter_loss_of_lock_count
+[32m'2024-06-22 13:29:34.001026 Word Count: 79754739, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:35.000134 Word Count: 119726770, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:36.000129 Word Count: 159725243, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:37.001000 Word Count: 199757629, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:38.000072 Word Count: 239721932, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:39.000999 Word Count: 279757584, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:40.001000 Word Count: 319758197, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:41.001000 Word Count: 359757784, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:42.000287 Word Count: 399729031, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:43.000998 Word Count: 439757279, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:44.001042 Word Count: 479759172, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:45.000995 Word Count: 519757246, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:46.001045 Word Count: 559759202, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:47.000997 Word Count: 599757242, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:48.001002 Word Count: 639757592, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:49.000105 Word Count: 679721881, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:50.000997 Word Count: 719756884, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:51.000997 Word Count: 759756836, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:52.001040 Word Count: 799758479, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:53.000997 Word Count: 839756596, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:54.001000 Word Count: 879756999, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:55.000099 Word Count: 919720635, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:56.001000 Word Count: 959756798, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:57.001000 Word Count: 999756819, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:58.000074 Word Count: 1039720627, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:29:59.000999 Word Count: 1079756413, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:00.001038 Word Count: 1119757949, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:01.000999 Word Count: 1159756253, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:02.000103 Word Count: 1199720497, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:03.000997 Word Count: 1239756079, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:04.001001 Word Count: 1279756488, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:05.000999 Word Count: 1319756009, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:06.000999 Word Count: 1359756152, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:07.000997 Word Count: 1399755851, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:08.001002 Word Count: 1439756262, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:09.000102 Word Count: 1479720235, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:10.001003 Word Count: 1519756229, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:11.000997 Word Count: 1559755528, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:12.001003 Word Count: 1599756312, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:13.000997 Word Count: 1639755556, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:14.000998 Word Count: 1679755623, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:15.000103 Word Count: 1719719952, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:16.000998 Word Count: 1759755539, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:17.000998 Word Count: 1799755526, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:18.001000 Word Count: 1839755779, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:19.000996 Word Count: 1879755238, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:20.000102 Word Count: 1919719475, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:21.000998 Word Count: 1959755349, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:22.000996 Word Count: 1999755003, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:23.001052 Word Count: 2039757186, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:24.000997 Word Count: 2079755088, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:25.000107 Word Count: 2119719710, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:26.000999 Word Count: 2159754938, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0b
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:27.000998 Word Count: 2199754912, Error Count: 0, FIFO occ: 0'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0b
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:28.000103 Word Count: 2239719837, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:29.001000 Word Count: 2279754940, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:30.000998 Word Count: 2319754923, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0e
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:31.000999 Word Count: 2359754844, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 10
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:32.000996 Word Count: 2399754802, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:33.001043 Word Count: 2439756491, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:34.000997 Word Count: 2479754696, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:35.000997 Word Count: 2519754476, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:36.001002 Word Count: 2559755061, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:37.000998 Word Count: 2599754393, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:38.000073 Word Count: 2639718571, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 12
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:39.000997 Word Count: 2679754324, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 14
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:40.001047 Word Count: 2719756313, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 14
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:41.000108 Word Count: 2759718699, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 15
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:42.001001 Word Count: 2799754396, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 15
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:43.000998 Word Count: 2839754185, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 15
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:44.001040 Word Count: 2879755759, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 15
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:45.000999 Word Count: 2919754007, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 15
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:46.000999 Word Count: 2959754139, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 16
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:47.000999 Word Count: 2999753933, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 16
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:48.001004 Word Count: 3039754486, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 16
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:49.001003 Word Count: 3079754140, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 16
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:50.000999 Word Count: 3119753963, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 17
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:51.001001 Word Count: 3159753749, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 17
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:52.001040 Word Count: 3199755538, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 17
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:53.001000 Word Count: 3239753570, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 18
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:54.000104 Word Count: 3279717929, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 18
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:55.001001 Word Count: 3319753808, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 18
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:56.001000 Word Count: 3359753470, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 19
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:57.000998 Word Count: 3399753148, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 1a
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:58.001047 Word Count: 3439755425, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 1c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:30:59.000997 Word Count: 3479752999, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 1c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:00.001000 Word Count: 3519753503, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 1d
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:01.000997 Word Count: 3559752847, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 1d
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:02.001000 Word Count: 3599753145, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 1e
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:03.000102 Word Count: 3639717036, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 1f
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:04.001000 Word Count: 3679753149, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 21
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:05.000996 Word Count: 3719752644, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 23
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:06.001000 Word Count: 3759753102, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 23
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:07.000100 Word Count: 3799716625, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 23
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:08.000073 Word Count: 3839717448, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 23
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:09.001044 Word Count: 3879754359, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 23
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:10.001037 Word Count: 3919754065, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 01 01 23
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:11.000997 Word Count: 3959752439, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 01 01 24
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:12.000106 Word Count: 3999717019, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 01 01 24
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:13.000997 Word Count: 4039752311, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 01 01 24
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:14.000999 Word Count: 4079752440, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 01 01 25
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:15.000996 Word Count: 4119752137, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 25
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:16.000998 Word Count: 4159752327, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 26
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:17.000999 Word Count: 4199752319, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 26
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:18.000997 Word Count: 4239752188, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 26
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:19.000999 Word Count: 4279752254, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 27
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:20.000104 Word Count: 24748932, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 27
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:21.001001 Word Count: 64784594, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 27
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:22.000998 Word Count: 104784571, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 27
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:23.000997 Word Count: 144784523, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 27
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:24.000999 Word Count: 184784554, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 02 02 27
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:25.000998 Word Count: 224784327, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 01 03 02 29
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:26.000996 Word Count: 264784396, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 03 02 29
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:27.000999 Word Count: 304784136, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 03 02 2a
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:28.001042 Word Count: 344786225, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 03 02 2b
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:29.000999 Word Count: 384784147, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 03 02 2b
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:30.000999 Word Count: 424784037, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:31.000997 Word Count: 464783949, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:32.001001 Word Count: 504784236, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:33.000103 Word Count: 544748065, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:34.000998 Word Count: 584783861, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:35.000997 Word Count: 624783651, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:36.001041 Word Count: 664785458, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:37.000998 Word Count: 704783561, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:38.000072 Word Count: 744747755, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2c
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:39.000997 Word Count: 784783349, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2d
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:40.001044 Word Count: 824785425, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2d
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:41.001004 Word Count: 864783967, Error Count: 1, FIFO occ: 3'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2d
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:42.000998 Word Count: 904783357, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2d
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:43.000999 Word Count: 944783460, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 2f
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:44.000999 Word Count: 984783476, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 30
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:45.000999 Word Count: 1024783239, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 30
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:46.000101 Word Count: 1064747284, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 30
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:47.000998 Word Count: 1104783250, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 30
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:48.001000 Word Count: 1144783429, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 31
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:49.000998 Word Count: 1184782897, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 31
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:50.000274 Word Count: 1224753999, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 02 04 02 31
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:51.001022 Word Count: 1264783668, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:52.000997 Word Count: 1304782989, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:53.001042 Word Count: 1344784664, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:54.000997 Word Count: 1384782812, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:55.000997 Word Count: 1424782663, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:56.001047 Word Count: 1464784663, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:57.001000 Word Count: 1504782867, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:58.000073 Word Count: 1544747328, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:31:59.000102 Word Count: 1584746559, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:00.001001 Word Count: 1624782844, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:01.000998 Word Count: 1664782268, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:02.000998 Word Count: 1704782397, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:03.000997 Word Count: 1744782153, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:04.000104 Word Count: 1784746849, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:05.000998 Word Count: 1824782186, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:06.000997 Word Count: 1864782118, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:07.001000 Word Count: 1904782063, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:08.000074 Word Count: 1944746967, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:09.000998 Word Count: 1984781891, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:10.000997 Word Count: 2024781942, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:11.000998 Word Count: 2064781877, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:12.000107 Word Count: 2104746454, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:13.001000 Word Count: 2144781972, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:14.000997 Word Count: 2184781741, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+[32m'2024-06-22 13:32:15.001000 Word Count: 2224781652, Error Count: 2, FIFO occ: 6'[0m
+tmr_err_cnt: 01 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 01 00 00 00 00 00 00 00 00 01 00 00 01 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 03 04 02 32
+other register errors: 01 00 00 00 00
+^CStopping
+-002 [7c28ffdf ffffdf3d 48407901 08468924 a0a973c9 8a951084 9182440c 893c8cc1 a227538a 3e2850d3 4889a42a a8807922 79227922] [7c28ffdf ffffdf3d 48407901 08468924 a0a973c9 8a951084 9182440c 893c8cc1 a227539a 3e2850d3 4889a42a a8807922 79227922] 18517586013
+-001 [0422ffbf ffdfffbe 0e606181 840f9e5e 6c619184 03210e6d 5103a84a 13308c99 9223088f 3860b131 21912d42 5481a000 01220122] [0422ffbf ffdfffbe 0e606181 840f9e5e 6c619184 03210e6d 5103a84a 13308c99 9223088f 3860b131 21912d42 5481a000 01220122] 18517586014
+0000 [1424ffef 3fffffff 223cf193 86c91236 40f994e8 8a233089 2253a3c9 9e4e6cb1 024350a2 367d3133 0783183a 6d1a0440 11221122] [1424ffef 3fffffff 223cf193 86c91236 40f994e8 8a233089 2253a3c9 9e4e6cb1 024350a2 367d3133 0783183a 6d1a0440 11221122] 15576120540
+0001 [1c00ffff ffffffff 26492a13 650f8838 6112240b 11a13ca0 a9f0e80e a554a54a 33048e1a 344cd101 044c8e4e 5ca22403 8b1e1922] [1c00ffff ffffffff 26492a13 650f8838 61122403 11a13ca0 a9f0e80e a554a54a 33048e1a 344cd101 044c8e4e 5ca22403 8b1e1922] 15576120541 <<<<<<<<
+0002 [241efffd dfffffff 3240d9e2 638a092a 2509d34b 08994ca4 f1b366d6 215244c0 c26b101b 14450a55 aace1f36 7d49f4e8 80002122] [241efffd dfffffff 3240d9e2 638a092a 2509d34b 08994ca4 f1b366d6 215244c0 c26b101b 14450a55 aace1f36 7d49f4e8 80002122] 15576120542
+0003 [7421ffff fffffef6 40448892 c90c1920 85091368 0c1b3a65 5a144a12 1c285031 84c84c8f 3a24f0e1 6a10a84a a0f1a540 71227122] [7421ffff fffffef6 40448892 c90c1920 85091368 0c1b3a65 5a144a12 1c285031 84c84c8f 3a24f0e1 6a10a84a a0f1a540 71227122] 18517586012
+0004 [7c28ffdf ffffdf3d 48407901 08468924 a0a973c9 8a951084 9182440c 893c8cc1 a227538a 3e2850d3 4889a42a a8807922 79227922] [7c28ffdf ffffdf3d 48407901 08468924 a0a973c9 8a951084 9182440c 893c8cc1 a227539a 3e2850d3 4889a42a a8807922 79227922] 18517586013 <<<<<<<<
+0005 [0422ffbf ffdfffbe 0e606181 840f9e5e 6c619184 03210e6d 5103a84a 13308c99 9223088f 3860b131 21912d42 5481a000 01220122] [0422ffbf ffdfffbe 0e606181 840f9e5e 6c619184 03210e6d 5103a84a 13308c99 9223088f 3860b131 21912d42 5481a000 01220122] 18517586014
+[31mFAILED[0m[31m                                                                                                                                                   [ 66%][0m
+test_ECONT_proton_seu.py::test_postbeam_checks Register Changes                   : Before ===>  After  
+Encoder_Global_tmr_err_cnt_auto_encoder:   0    ===>     50
+FormatterBuffer_Global_tmr_err_cnt_fmtbuf:   0    ===>      2
+Algo_Global_tmr_err_cnt_alg        :   0    ===>      4
+Config_Global_tmr_err_cnt_mfc      :   0    ===>      3
+ETx_Global_tmr_err_cnt_etx         :   0    ===>      1
+Aligner_Global_tmr_err_cnt_aligner :   0    ===>      1
+ChAligner_09_tmr_err_cnt_chan_aligner:   0    ===>      1
+ChAligner_08_tmr_err_cnt_chan_aligner:   0    ===>      1
+ChAligner_05_tmr_err_cnt_chan_aligner:   0    ===>      1
+ChAligner_03_tmr_err_cnt_chan_aligner:   0    ===>      1
+ChAligner_01_tmr_err_cnt_chan_aligner:   0    ===>      1
+[31mFAILED[0m[31m                                                                                                                                                [100%][0m
+
+================================================================================================= FAILURES =================================================================================================
+[31m[1m____________________________________________________________________________________________ test_beam_running _____________________________________________________________________________________________[0m
+
+fc = <utils.fastcontrol.FastControl object at 0x7f9d63c940>, sc = <utils.streamcompare.StreamCompare object at 0x7f9d63c7b8>, lc_asic = <utils.linkcapture.LinkCapture object at 0x7f9d63ca90>
+lc_emu = <utils.linkcapture.LinkCapture object at 0x7f9d63cf60>, lc_counter = <utils.linkcapture.LinkCapture object at 0x7f9d65d390>
+active_eTXs = array([ True,  True,  True,  True,  True,  True,  True,  True,  True,
+        True,  True,  True,  True]), i2c_asic = <econ_i2c.ECON_I2C object at 0x7f9d65df28>
+i2c_emu = <econ_i2c.ECON_I2C object at 0x7f9d65d9e8>, i2c_initial = {'AlgoDroplsb_Global_drop_lsb': 3, 'AlgoThreshold_00': 47, 'AlgoThreshold_01': 47, 'AlgoThreshold_02': 47, ...}
+json_metadata = {'daq_asic_post_beam': [[337969135, 1073741823, 574419347, 2261324342, 1090098408, 2317561993, ...], [469827583, 42949...nts': [[1, 0, 0, 0, 0], [1, 0, 0, 0, 0], [1, 0, 0, 0, 0], [1, 0, 0, 0, 0], [1, 0, 0, 0, 0], [1, 0, 0, 0, 0], ...], ...}
+capsys = <_pytest.capture.CaptureFixture object at 0x7f9cffbeb8>, target = 'ECONT'
+
+    [37m@normalrun[39;49;00m
+    [37m@pytest[39;49;00m.mark.skip_target([33m"[39;49;00m[33mECOND[39;49;00m[33m"[39;49;00m)
+    [37m@pytest[39;49;00m.mark.order([33m"[39;49;00m[33msecond[39;49;00m[33m"[39;49;00m)
+    [94mdef[39;49;00m [92mtest_beam_running[39;49;00m(
+        fc,
+        sc,
+        lc_asic,
+        lc_emu,
+        lc_counter,
+        active_eTXs,
+        i2c_asic,
+        i2c_emu,
+        i2c_initial,
+        json_metadata,
+        capsys,
+        target,
+    ):
+        [94mwith[39;49;00m capsys.disabled():
+            [96mprint[39;49;00m()
+            [96mprint[39;49;00m([33m"[39;49;00m[33mBeam Running[39;49;00m[33m"[39;49;00m)
+    
+        i2c_asic.snapshot_read()
+        [90m# Configure Stream Compare[39;49;00m
+        sc.set_trigger([94mFalse[39;49;00m)
+    
+        [90m# Configure Link Captures to capture on disagreement[39;49;00m
+        nwords = [94m3[39;49;00m     [90m# Capture 3 BX total[39;49;00m
+        bx_offset = [94m29[39;49;00m [90m# Capture on BX before the mismatch (mismatch is at 30)[39;49;00m
+        [94mfor[39;49;00m lc [95min[39;49;00m [lc_asic, lc_emu, lc_counter]:
+            [90m# configure LC to capture in extra signal sent by Stream Compare[39;49;00m
+            lc.configure([33m"[39;49;00m[33mextra[39;49;00m[33m"[39;49;00m, bx=bx_offset, nwords=nwords)
+            lc.stop_continous_capture()
+            lc.clear_fifo()
+            lc.aquire(continuous=[94m1[39;49;00m)
+    
+        word_err_count = []
+        tmr_count = []
+        other_registers_cnt = []
+        initial = time.time()
+        [94mwith[39;49;00m capsys.disabled():
+            [96mprint[39;49;00m(
+                [33m"[39;49;00m[33mStarting Stream Compare:  Use CTRL-C to interupt and start register comparison[39;49;00m[33m"[39;49;00m
+            )
+    
+        [90m# Reset counters and start triggering on disagreements[39;49;00m
+        sc.set_trigger([94mTrue[39;49;00m)
+        sc.reset_counters()
+    
+        [90m# FIFO occupancy at which we read the fifo[39;49;00m
+        occ_threshold_to_read = [94m5000[39;49;00m
+        [90m# Threshold of (err_counts/word_counts) at which to stop the test[39;49;00m
+        ratio_threshold_to_stop = [94m1.2[39;49;00m
+    
+        tmr_names = i2c_asic.read(
+            config_to_monitor, minimal_convert_read=[94mTrue[39;49;00m, convert_read=[94mFalse[39;49;00m
+        ).keys()
+        other_registers_names = i2c_asic.read(
+            other_registers, minimal_convert_read=[94mTrue[39;49;00m, convert_read=[94mFalse[39;49;00m
+        ).keys()
+        [94mwith[39;49;00m capsys.disabled():
+            [96mprint[39;49;00m([33mf[39;49;00m[33m'[39;49;00m[33mtmr_names: [39;49;00m[33m{[39;49;00m[33m"[39;49;00m[33m,[39;49;00m[33m"[39;49;00m.join([96mlist[39;49;00m(tmr_names))[33m}[39;49;00m[33m'[39;49;00m)
+            [96mprint[39;49;00m([33mf[39;49;00m[33m'[39;49;00m[33mother_registers_names: [39;49;00m[33m{[39;49;00m[33m"[39;49;00m[33m,[39;49;00m[33m"[39;49;00m.join([96mlist[39;49;00m(other_registers_names))[33m}[39;49;00m[33m'[39;49;00m)
+    
+        num_reads = [94m0[39;49;00m
+    
+        [90m# Start sending L1As[39;49;00m
+        fc.send_sequence(periodic=[94mTrue[39;49;00m, length=[96mlen[39;49;00m(fc_sequence))
+    
+        count_runs=[94m0[39;49;00m
+        tick = clock_tick(period=[94m1[39;49;00m) [90m# period is in units of seconds[39;49;00m
+    
+        daq_captures_during_run = []
+    
+        [94mtry[39;49;00m:
+            tick()
+            [94mwhile[39;49;00m [94mTrue[39;49;00m:
+                [94mif[39;49;00m count_runs >= [94m1200[39;49;00m: [94mbreak[39;49;00m [90m# Stop after 20 minutes[39;49;00m
+                count_runs += [94m1[39;49;00m
+                [90m# print counters every second[39;49;00m
+                now = tick()
+    
+                num_reads = num_reads + [94m1[39;49;00m
+                curr_time = datetime.fromtimestamp(now)
+                timestamp = curr_time.strftime([33m"[39;49;00m[33m%[39;49;00m[33mY-[39;49;00m[33m%[39;49;00m[33mm-[39;49;00m[33m%d[39;49;00m[33m [39;49;00m[33m%[39;49;00m[33mH:[39;49;00m[33m%[39;49;00m[33mM:[39;49;00m[33m%[39;49;00m[33mS.[39;49;00m[33m%f[39;49;00m[33m"[39;49;00m)
+    
+                sc.latch_counters()
+                word_count, err_count = sc.read_both_counters()
+                word_err_count.append([timestamp, word_count, err_count])
+    
+                [90m# read fifo occupancy[39;49;00m
+                occupancies = np.concatenate([lc_asic.read_occupancy(),
+                                              lc_emu.read_occupancy(),
+                                              lc_counter.read_occupancy()])
+    
+                to_print = [33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00mtimestamp[33m}[39;49;00m[33m Word Count: [39;49;00m[33m{[39;49;00mword_count[33m}[39;49;00m[33m, Error Count: [39;49;00m[33m{[39;49;00merr_count[33m}[39;49;00m[33m, FIFO occ: [39;49;00m[33m{[39;49;00moccupancies.max()[33m}[39;49;00m[33m"[39;49;00m
+                [94mwith[39;49;00m capsys.disabled():
+                    pprint(to_print)
+    
+                [94mif[39;49;00m occupancies.max() >= occ_threshold_to_read:
+                    [90m# assumes that all links have captured the same number of words[39;49;00m
+                    daq_asic = lc_asic.read_fifo(
+                        print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=occupancies.min(), read_full=[94mFalse[39;49;00m
+                    )
+                    daq_emu = lc_emu.read_fifo(
+                        print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=occupancies.min(), read_full=[94mFalse[39;49;00m
+                    )
+                    daq_counter = lc_counter.read_fifo(
+                        print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=occupancies.min(), read_full=[94mFalse[39;49;00m
+                    )
+                    daq_captures_during_run.append([daq_asic,daq_emu,daq_counter])
+    
+                [90m# check counters[39;49;00m
+                tmr_errors = i2c_asic.read(
+                    config_to_monitor, minimal_convert_read=[94mTrue[39;49;00m, convert_read=[94mFalse[39;49;00m
+                ).values()
+                tmr_count.append([96mlist[39;49;00m(tmr_errors))
+                other_registers_errors = i2c_asic.read(
+                    other_registers, minimal_convert_read=[94mTrue[39;49;00m, convert_read=[94mFalse[39;49;00m
+                ).values()
+                other_registers_cnt.append([96mlist[39;49;00m(other_registers_errors))
+                tmr_str = [33m"[39;49;00m[33m [39;49;00m[33m"[39;49;00m.join([[33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00mx[33m:[39;49;00m[33m02x[39;49;00m[33m}[39;49;00m[33m"[39;49;00m [94mfor[39;49;00m x [95min[39;49;00m tmr_errors])
+                other_registers_str = [33m"[39;49;00m[33m [39;49;00m[33m"[39;49;00m.join([[33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00mx[33m:[39;49;00m[33m02x[39;49;00m[33m}[39;49;00m[33m"[39;49;00m [94mfor[39;49;00m x [95min[39;49;00m other_registers_errors])
+                [94mwith[39;49;00m capsys.disabled():
+                    [96mprint[39;49;00m([33mf[39;49;00m[33m"[39;49;00m[33mtmr_err_cnt: [39;49;00m[33m{[39;49;00mtmr_str[33m}[39;49;00m[33m"[39;49;00m)
+                    [96mprint[39;49;00m([33mf[39;49;00m[33m"[39;49;00m[33mother register errors: [39;49;00m[33m{[39;49;00mother_registers_str[33m}[39;49;00m[33m"[39;49;00m)
+    
+                [90m# if error count is too high, stop[39;49;00m
+                [94mif[39;49;00m err_count / word_count > ratio_threshold_to_stop:
+                    [94mwith[39;49;00m capsys.disabled():
+                        [96mprint[39;49;00m(
+                            [33mf[39;49;00m[33m"[39;49;00m[33mStopping. Fraction of errors is too high [39;49;00m[33m{[39;49;00merr_count/word_count[33m}[39;49;00m[33m"[39;49;00m
+                        )
+                    [94mbreak[39;49;00m
+    
+        [94mexcept[39;49;00m [96mKeyboardInterrupt[39;49;00m:
+            [94mwith[39;49;00m capsys.disabled():
+                [96mprint[39;49;00m([33m"[39;49;00m[33mStopping[39;49;00m[33m"[39;49;00m)
+    
+        num_reads = [94m0[39;49;00m
+        [94mfor[39;49;00m daq_asic, daq_counter [95min[39;49;00m daq_captures_during_run:
+            print_differences(daq_asic, daq_emu, daq_counter, active_eTXs, capsys, nBeforeAfter=[94m3[39;49;00m)
+            json_metadata.update(
+                {
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_asic_at_beam_[39;49;00m[33m{[39;49;00mnum_reads[33m}[39;49;00m[33m"[39;49;00m: daq_asic.tolist(),
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_emu_at_beam_[39;49;00m[33m{[39;49;00mnum_reads[33m}[39;49;00m[33m"[39;49;00m: daq_emu.tolist(),
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_counter_at_beam_[39;49;00m[33m{[39;49;00mnum_reads[33m}[39;49;00m[33m"[39;49;00m: daq_counter.tolist(),
+                }
+            )
+            num_reads += [94m1[39;49;00m
+    
+        [90m# Latch and reset counters and stop triggering on disagreements[39;49;00m
+        sc.latch_counters()
+        fc.send_sequence(periodic=[94mFalse[39;49;00m, length=[96mlen[39;49;00m(fc_sequence))
+        sc.set_trigger([94mFalse[39;49;00m)
+        sc.reset_counters()
+        [94mfor[39;49;00m lc [95min[39;49;00m [lc_asic, lc_emu, lc_counter]:
+            lc.stop_continous_capture()
+    
+        json_metadata[[33m"[39;49;00m[33mword_err_count[39;49;00m[33m"[39;49;00m] = word_err_count
+        json_metadata[[33m"[39;49;00m[33mtmr_err_names[39;49;00m[33m"[39;49;00m] = [96mlist[39;49;00m(tmr_names)
+        json_metadata[[33m"[39;49;00m[33mtmr_err_cnts[39;49;00m[33m"[39;49;00m] = tmr_count
+        json_metadata[[33m"[39;49;00m[33mother_register_err_names[39;49;00m[33m"[39;49;00m] = [96mlist[39;49;00m(other_registers_names)
+        json_metadata[[33m"[39;49;00m[33mother_register_err_cnts[39;49;00m[33m"[39;49;00m] = other_registers_cnt
+    
+        occupancies = np.array([lc_asic.read_occupancy().max(),
+                                lc_emu.read_occupancy().max(),
+                                lc_counter.read_occupancy().max()])
+    
+        [94mif[39;49;00m np.any(occupancies != [94m0[39;49;00m):
+            daq_asic = lc_asic.read_fifo(
+                print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=occupancies[[94m0[39;49;00m]
+            )
+            daq_emu = lc_emu.read_fifo(
+                print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=occupancies[[94m1[39;49;00m]
+            )
+            daq_counter = lc_counter.read_fifo(
+                print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=occupancies[[94m2[39;49;00m]
+            )
+            print_differences(daq_asic, daq_emu, daq_counter, active_eTXs, capsys, nBeforeAfter=[94m3[39;49;00m)
+    
+            json_metadata.update(
+                {
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_asic_post_beam[39;49;00m[33m"[39;49;00m: daq_asic.tolist(),
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_emu_post_beam[39;49;00m[33m"[39;49;00m: daq_emu.tolist(),
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_counter_post_beam[39;49;00m[33m"[39;49;00m: daq_counter.tolist(),
+                }
+            )
+        [94melse[39;49;00m:
+            json_metadata.update(
+                {
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_asic_post_beam[39;49;00m[33m"[39;49;00m: [],
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_emu_post_beam[39;49;00m[33m"[39;49;00m: [],
+                    [33mf[39;49;00m[33m"[39;49;00m[33mdaq_counter_post_beam[39;49;00m[33m"[39;49;00m: [],
+                }
+            )
+>       [94massert[39;49;00m err_count == [94m0[39;49;00m
+[1m[31mE       assert 2 == 0[0m
+[1m[31mE         +2[0m
+[1m[31mE         -0[0m
+
+[1m[31mtest_ECONT_proton_seu.py[0m:633: AssertionError
+[31m[1m___________________________________________________________________________________________ test_postbeam_checks ___________________________________________________________________________________________[0m
+
+fc = <utils.fastcontrol.FastControl object at 0x7f9d63c940>, sc = <utils.streamcompare.StreamCompare object at 0x7f9d63c7b8>, lc_asic = <utils.linkcapture.LinkCapture object at 0x7f9d63ca90>
+lc_emu = <utils.linkcapture.LinkCapture object at 0x7f9d63cf60>, lc_counter = <utils.linkcapture.LinkCapture object at 0x7f9d65d390>
+i2c_initial = {'AlgoDroplsb_Global_drop_lsb': 3, 'AlgoThreshold_00': 47, 'AlgoThreshold_01': 47, 'AlgoThreshold_02': 47, ...}, i2c_asic = <econ_i2c.ECON_I2C object at 0x7f9d65df28>
+CfgConverterECON = <econ_tools.swamp.cfgconverter.CfgConverter object at 0x7f9d65d5f8>
+json_metadata = {'daq_asic_after_beam': [[1948844031, 4293914429, 1081620865, 3297186578, 1020335109, 3414962788, ...], [2082144254, 4... 0', 'Misc_Global_rw_err_clr_00: 0', 'Misc_Global_bad_erx_status_clear: 0', 'Misc_Global_status_capture: 0', ...], ...}
+capsys = <_pytest.capture.CaptureFixture object at 0x7f9cf8e5c0>
+
+    [37m@normalrun[39;49;00m
+    [37m@pytest[39;49;00m.mark.skip_target([33m"[39;49;00m[33mECOND[39;49;00m[33m"[39;49;00m)
+    [37m@pytest[39;49;00m.mark.order([33m"[39;49;00m[33mthird[39;49;00m[33m"[39;49;00m)
+    [94mdef[39;49;00m [92mtest_postbeam_checks[39;49;00m(
+        fc,
+        sc,
+        lc_asic,
+        lc_emu,
+        lc_counter,
+        i2c_initial,
+        i2c_asic,
+        CfgConverterECON,
+        json_metadata,
+        capsys,
+    ):
+        [90m## Calls the initial reading of registers[39;49;00m
+        read_ASIC_old = i2c_initial
+        var = []
+        [94mfor[39;49;00m key [95min[39;49;00m read_ASIC_old:
+            var.append([33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00mkey[33m}[39;49;00m[33m: [39;49;00m[33m{[39;49;00mread_ASIC_old[key][33m}[39;49;00m[33m"[39;49;00m)
+    
+        [90m## Reads the registers again after radiation[39;49;00m
+        full_config_bytes = i2c_asic.read_all()
+        read_ASIC_new = CfgConverterECON.bytes_to_ECON_dict(full_config_bytes)
+    
+        [90m## Calculates the register changes before and after radiation[39;49;00m
+        d = diff_dict(read_ASIC_old, read_ASIC_new)
+        json_metadata[[33m"[39;49;00m[33minitial_read[39;49;00m[33m"[39;49;00m] = var
+    
+        [90m## Capturing another 4095 words on SPARE_1[39;49;00m
+        nwords = [94m4095[39;49;00m
+        [94mfor[39;49;00m lc [95min[39;49;00m [lc_asic, lc_emu, lc_counter]:
+            lc.configure([33m"[39;49;00m[33mSPARE_1[39;49;00m[33m"[39;49;00m, bx=[94m0[39;49;00m, verbose=[94mFalse[39;49;00m, nwords=nwords)
+            lc.stop_continous_capture()
+            lc.clear_fifo()
+            lc.aquire(continuous=[94m0[39;49;00m)
+    
+        fc.send_sequence(periodic=[94mFalse[39;49;00m, length=[96mlen[39;49;00m(fc_sequence))
+    
+        json_metadata.update(
+            {
+                [33m"[39;49;00m[33mdaq_asic_after_beam[39;49;00m[33m"[39;49;00m: lc_asic.read_fifo(
+                    print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=nwords
+                ).tolist(),
+                [33m"[39;49;00m[33mdaq_emu_after_beam[39;49;00m[33m"[39;49;00m: lc_emu.read_fifo(
+                    print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=nwords
+                ).tolist(),
+                [33m"[39;49;00m[33mdaq_counter_after_beam[39;49;00m[33m"[39;49;00m: lc_counter.read_fifo(
+                    print_hex=[94mFalse[39;49;00m, file_name=[94mNone[39;49;00m, nwords=nwords
+                ).tolist(),
+            }
+        )
+    
+        var2 = []
+        [94mfor[39;49;00m key [95min[39;49;00m d:
+            var2.append([33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00mkey[33m}[39;49;00m[33m: [39;49;00m[33m{[39;49;00md[key][33m}[39;49;00m[33m"[39;49;00m)
+        json_metadata[[33m"[39;49;00m[33mregister_differences[39;49;00m[33m"[39;49;00m] = var2
+    
+        [90m## Print Register Differences[39;49;00m
+        temp = [33m"[39;49;00m[33m===>[39;49;00m[33m"[39;49;00m
+        before = [33m"[39;49;00m[33mBefore[39;49;00m[33m"[39;49;00m
+        after = [33m"[39;49;00m[33mAfter[39;49;00m[33m"[39;49;00m
+        register = [33m"[39;49;00m[33mRegister Changes[39;49;00m[33m"[39;49;00m
+        register_changes = []
+        [94mfor[39;49;00m i [95min[39;49;00m [96mrange[39;49;00m([94m12[39;49;00m):
+            [94mif[39;49;00m [33mf[39;49;00m[33m"[39;49;00m[33mChAligner_[39;49;00m[33m{[39;49;00mi[33m:[39;49;00m[33m02d[39;49;00m[33m}[39;49;00m[33m_hdr_mm_cntr[39;49;00m[33m"[39;49;00m [95min[39;49;00m d:
+                d.pop([33mf[39;49;00m[33m"[39;49;00m[33mChAligner_[39;49;00m[33m{[39;49;00mi[33m:[39;49;00m[33m02d[39;49;00m[33m}[39;49;00m[33m_hdr_mm_cntr[39;49;00m[33m"[39;49;00m)
+    
+            bcr_error_change = (
+                read_ASIC_new[[33mf[39;49;00m[33m"[39;49;00m[33mChAligner_[39;49;00m[33m{[39;49;00mi[33m:[39;49;00m[33m02d[39;49;00m[33m}[39;49;00m[33m_orbsyn_fc_err_cnt[39;49;00m[33m"[39;49;00m]
+                 - read_ASIC_old[[33mf[39;49;00m[33m"[39;49;00m[33mChAligner_[39;49;00m[33m{[39;49;00mi[33m:[39;49;00m[33m02d[39;49;00m[33m}[39;49;00m[33m_orbsyn_fc_err_cnt[39;49;00m[33m"[39;49;00m]
+            ) % [94m256[39;49;00m
+            [94mif[39;49;00m [33mf[39;49;00m[33m"[39;49;00m[33mChAligner_[39;49;00m[33m{[39;49;00mi[33m:[39;49;00m[33m02d[39;49;00m[33m}[39;49;00m[33m_orbsyn_fc_err_cnt[39;49;00m[33m"[39;49;00m [95min[39;49;00m d [95mand[39;49;00m bcr_error_change<=[94m2[39;49;00m:
+                d.pop([33mf[39;49;00m[33m"[39;49;00m[33mChAligner_[39;49;00m[33m{[39;49;00mi[33m:[39;49;00m[33m02d[39;49;00m[33m}[39;49;00m[33m_orbsyn_fc_err_cnt[39;49;00m[33m"[39;49;00m)
+    
+        wb_error_change = (
+            read_ASIC_new[[33m"[39;49;00m[33mMisc_Global_wbmaster_err_wb_adr_cnt[39;49;00m[33m"[39;49;00m]
+            - read_ASIC_old[[33m"[39;49;00m[33mMisc_Global_wbmaster_err_wb_adr_cnt[39;49;00m[33m"[39;49;00m]
+        ) % [94m256[39;49;00m
+    
+        [94mif[39;49;00m wb_error_change == [94m195[39;49;00m:
+            d.pop([33m"[39;49;00m[33mMisc_Global_wbmaster_err_wb_adr_cnt[39;49;00m[33m"[39;49;00m)
+    
+        [94mwith[39;49;00m capsys.disabled():
+            [94mif[39;49;00m d:
+                [96mprint[39;49;00m([33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00mregister[33m:[39;49;00m[33m <35[39;49;00m[33m}[39;49;00m[33m: [39;49;00m[33m{[39;49;00mbefore[33m:[39;49;00m[33m ^6[39;49;00m[33m}[39;49;00m[33m [39;49;00m[33m{[39;49;00mtemp[33m:[39;49;00m[33m ^5[39;49;00m[33m}[39;49;00m[33m [39;49;00m[33m{[39;49;00mafter[33m:[39;49;00m[33m ^6[39;49;00m[33m}[39;49;00m[33m [39;49;00m[33m"[39;49;00m)
+                [94mfor[39;49;00m key [95min[39;49;00m d:
+                    [96mprint[39;49;00m(
+                        [33mf[39;49;00m[33m"[39;49;00m[33m{[39;49;00mkey[33m:[39;49;00m[33m <35[39;49;00m[33m}[39;49;00m[33m: [39;49;00m[33m{[39;49;00mread_ASIC_old[key][33m:[39;49;00m[33m ^6[39;49;00m[33m}[39;49;00m[33m [39;49;00m[33m{[39;49;00mtemp[33m:[39;49;00m[33m ^5[39;49;00m[33m}[39;49;00m[33m [39;49;00m[33m{[39;49;00mread_ASIC_new[key][33m:[39;49;00m[33m >5[39;49;00m[33m}[39;49;00m[33m"[39;49;00m
+                    )
+    
+            [94melse[39;49;00m:
+                [96mprint[39;49;00m([33m"[39;49;00m[33mNo difference between ASIC before and after configuration[39;49;00m[33m"[39;49;00m)
+    
+        [90m## take I2C snapshot[39;49;00m
+        snapshots, snapshot_dvs, pattern_matchs, selects = i2c_asic.snapshot_read()
+    
+        json_metadata.update(
+            {
+                [33m"[39;49;00m[33msnapshots[39;49;00m[33m"[39;49;00m: [96mlist[39;49;00m(snapshots),
+                [33m"[39;49;00m[33msnapshot_dvs[39;49;00m[33m"[39;49;00m: [96mlist[39;49;00m(snapshot_dvs.astype([96mobject[39;49;00m)),
+                [33m"[39;49;00m[33mpattern_matchs[39;49;00m[33m"[39;49;00m: [96mlist[39;49;00m(pattern_matchs.astype([96mobject[39;49;00m)),
+                [33m"[39;49;00m[33mselects[39;49;00m[33m"[39;49;00m: [96mlist[39;49;00m(selects),
+            }
+        )
+    
+        [90m# assert no differences[39;49;00m
+>       [94massert[39;49;00m d == [94mNone[39;49;00m [95mor[39;49;00m d == {}
+[1m[31mE       AssertionError: assert ({'Algo_Global_tmr_err_cnt_alg': 4,\n 'Aligner_Global_tmr_err_cnt_aligner': 1,\n 'ChAligner_01_tmr_err_cnt_chan_aligner': 1,\n 'ChAligner_03_tmr_err_cnt_chan_aligner': 1,\n 'ChAligner_05_tmr_err_cnt_chan_aligner': 1,\n 'ChAligner_08_tmr_err_cnt_chan_aligner': 1,\n 'ChAligner_09_tmr_err_cnt_chan_aligner': 1,\n 'Config_Global_tmr_err_cnt_mfc': 3,\n 'ETx_Global_tmr_err_cnt_etx': 1,\n 'Encoder_Global_tmr_err_cnt_auto_encoder': 50,\n 'FormatterBuffer_Global_tmr_err_cnt_fmtbuf': 2} == None[0m
+[1m[31mE         +{'Encoder_Global_tmr_err_cnt_auto_encoder': 50, 'FormatterBuffer_Global_tmr_err_cnt_fmtbuf': 2, 'Algo_Global_tmr_err_cnt_alg': 4, 'Config_Global_tmr_err_cnt_mfc': 3, 'ETx_Global_tmr_err_cnt_etx': 1, 'Aligner_Global_tmr_err_cnt_aligner': 1, 'ChAligner_09_tmr_err_cnt_chan_aligner': 1, 'ChAligner_08_tmr_err_cnt_chan_aligner': 1, 'ChAligner_05_tmr_err_cnt_chan_aligner': 1, 'ChAligner_03_tmr_err_cnt_chan_aligner': 1, 'ChAligner_01_tmr_err_cnt_chan_aligner': 1}[0m
+[1m[31mE         -None or {'Algo_Global_tmr_err_cnt_alg': 4,\n 'Aligner_Global_tmr_err_cnt_aligner': 1,\n 'ChAligner_01_tmr_err_cnt_chan_aligner': 1,\n 'ChAligner_03_tmr_err_cnt_chan_aligner': 1,\n 'ChAligner_05_tmr_err_cnt_chan_aligner': 1,\n 'ChAligner_08_tmr_err_cnt_chan_aligner': 1,\n 'ChAligner_09_tmr_err_cnt_chan_aligner': 1,\n 'Config_Global_tmr_err_cnt_mfc': 3,\n 'ETx_Global_tmr_err_cnt_etx': 1,\n 'Encoder_Global_tmr_err_cnt_auto_encoder': 50,\n 'FormatterBuffer_Global_tmr_err_cnt_fmtbuf': 2} == {}[0m
+[1m[31mE         Left contains 11 more items:[0m
+[1m[31mE         {'Algo_Global_tmr_err_cnt_alg': 4,[0m
+[1m[31mE          'Aligner_Global_tmr_err_cnt_aligner': 1,[0m
+[1m[31mE          'ChAligner_01_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE          'ChAligner_03_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE          'ChAligner_05_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE          'ChAligner_08_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE          'ChAligner_09_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE          'Config_Global_tmr_err_cnt_mfc': 3,[0m
+[1m[31mE          'ETx_Global_tmr_err_cnt_etx': 1,[0m
+[1m[31mE          'Encoder_Global_tmr_err_cnt_auto_encoder': 50,[0m
+[1m[31mE          'FormatterBuffer_Global_tmr_err_cnt_fmtbuf': 2}[0m
+[1m[31mE         Full diff:[0m
+[1m[31mE           {[0m
+[1m[31mE         -  ,[0m
+[1m[31mE         +  'Algo_Global_tmr_err_cnt_alg': 4,[0m
+[1m[31mE         +  'Aligner_Global_tmr_err_cnt_aligner': 1,[0m
+[1m[31mE         +  'ChAligner_01_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE         +  'ChAligner_03_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE         +  'ChAligner_05_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE         +  'ChAligner_08_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE         +  'ChAligner_09_tmr_err_cnt_chan_aligner': 1,[0m
+[1m[31mE         +  'Config_Global_tmr_err_cnt_mfc': 3,[0m
+[1m[31mE         +  'ETx_Global_tmr_err_cnt_etx': 1,[0m
+[1m[31mE         +  'Encoder_Global_tmr_err_cnt_auto_encoder': 50,[0m
+[1m[31mE         +  'FormatterBuffer_Global_tmr_err_cnt_fmtbuf': 2,[0m
+[1m[31mE           })[0m
+
+[1m[31mtest_ECONT_proton_seu.py[0m:743: AssertionError
+----------------------------------------------------------------------------------------------- JSON report ------------------------------------------------------------------------------------------------
+report auto-save skipped
+========================================================================================= short test summary info ==========================================================================================
+FAILED test_ECONT_proton_seu.py::test_beam_running - assert 2 == 0
+FAILED test_ECONT_proton_seu.py::test_postbeam_checks - AssertionError: assert ({'Algo_Global_tmr_err_cnt_alg': 4,\n 'Aligner_Global_tmr_err_cnt_aligner': 1,\n 'ChAligner_01_tmr_err_cnt_chan_aligner': ...
+[31m================================================================================= [31m[1m2 failed[0m, [32m1 passed[0m[31m in 194.46s (0:03:14)[0m[31m ==================================================================================[0m
+]0;HGCAL_dev@localhost:~/SEU_test_Jun222024/econd-sw/test_radiation[HGCAL_dev@192.168.1.44 test_radiation]$ pytest test_ECONT_proton_seu.py --target ECONT --run_number 14 --chip 2[HGCAL_dev@192.168.1.44 test_radiation]$ [Kpytest test_ECONT_proton_seu.py --target ECONT --run_number 14 --chip 2[1@999 --chip 2[1P14 --chip 2[HGCAL_dev@192.168.1.44 test_radiation]$ [Kpytest test_ECONT_proton_seu.py --target ECONT --run_number 14 --chip 2[1@999 --chip 2[1P14 --chip 2[HGCAL_dev@192.168.1.44 test_radiation]$ [Kpytest test_ECONT_proton_seu.py --target ECONT --run_number 14 --chip 2[1@999 --chip 2[1P14 --chip 2[HGCAL_dev@192.168.1.44 test_radiation]$ [Kpytest test_ECONT_proton_seu.py --target ECONT --run_number 14 --chip 2
