@@ -1,0 +1,53 @@
+{
+  "created": 1719076370.1148455,
+  "duration": 7.059446334838867,
+  "exitcode": 2,
+  "root": "/home/HGCAL_dev/SEU_test_Jun222024/econd-sw/test_radiation",
+  "environment": {
+    "Python": "3.6.8",
+    "Platform": "Linux-4.19.0-xilinx-v2019.2-aarch64-with-centos-7.9.2009-AltArch",
+    "Packages": {
+      "pytest": "7.0.1",
+      "py": "1.11.0",
+      "pluggy": "1.0.0"
+    },
+    "Plugins": {
+      "metadata": "1.11.0",
+      "anyio": "3.3.1",
+      "order": "1.1.0",
+      "repeat": "0.9.1",
+      "json-report": "1.5.0"
+    }
+  },
+  "summary": {
+    "total": 0,
+    "collected": 0
+  },
+  "collectors": [
+    {
+      "nodeid": "",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "test_ECONT_proton_seu.py",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "nodeid": "test_ECONT_proton_seu.py",
+      "outcome": "failed",
+      "result": [],
+      "longrepr": "test_ECONT_proton_seu.py:10: in <module>\n    from rich.console import Console\n../../../.local/lib/python3.6/site-packages/rich/console.py:37: in <module>\n    from rich._null_file import NULL_FILE\n../../../.local/lib/python3.6/site-packages/rich/_null_file.py:5: in <module>\n    class NullFile(IO[str]):\n../../../.local/lib/python3.6/site-packages/rich/_null_file.py:69: in NullFile\n    __traceback: Optional[TracebackType],\n/usr/lib64/python3.6/typing.py:676: in inner\n    @functools.wraps(func)\nE   KeyboardInterrupt"
+    }
+  ],
+  "tests": [],
+  "FPGA-hexa-IP": "44",
+  "branch": "gec_seuprep_June2024",
+  "commit_hash": "4015218d76de61c3bca5829c203d40c408bd2f4e",
+  "remote_url": "ssh://git@gitlab.cern.ch:7999/hgcal-daq-sw/econd-sw.git",
+  "status": "?? test_radiation/data/\u0000",
+  "firmware_name": "econ-t2-tester-socket.bit\u0000",
+  "firmware_git_desc": "9e5953f-dirty",
+  "chip_number": null
+}

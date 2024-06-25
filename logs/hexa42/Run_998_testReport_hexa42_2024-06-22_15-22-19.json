@@ -1,0 +1,53 @@
+{
+  "created": 1719087739.1025536,
+  "duration": 15.921008348464966,
+  "exitcode": 2,
+  "root": "/home/HGCAL_dev/SEU_test_Jun222024/econd-sw/test_radiation",
+  "environment": {
+    "Python": "3.6.8",
+    "Platform": "Linux-4.19.0-xilinx-v2019.2-aarch64-with-centos-7.9.2009-AltArch",
+    "Packages": {
+      "pytest": "7.0.1",
+      "py": "1.11.0",
+      "pluggy": "1.0.0"
+    },
+    "Plugins": {
+      "metadata": "1.11.0",
+      "anyio": "3.3.1",
+      "order": "1.1.0",
+      "repeat": "0.9.1",
+      "json-report": "1.5.0"
+    }
+  },
+  "summary": {
+    "total": 0,
+    "collected": 0
+  },
+  "collectors": [
+    {
+      "nodeid": "",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "test_ECONT_proton_seu.py",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "nodeid": "test_ECONT_proton_seu.py",
+      "outcome": "failed",
+      "result": [],
+      "longrepr": "ImportError while importing test module '/home/HGCAL_dev/SEU_test_Jun222024/econd-sw/test_radiation/test_ECONT_proton_seu.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n../../../.local/lib/python3.6/site-packages/_pytest/python.py:599: in _importtestmodule\n    mod = import_path(self.path, mode=importmode, root=self.config.rootpath)\n../../../.local/lib/python3.6/site-packages/_pytest/pathlib.py:533: in import_path\n    importlib.import_module(module_name)\n/usr/lib64/python3.6/importlib/__init__.py:126: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n<frozen importlib._bootstrap>:994: in _gcd_import\n    ???\n<frozen importlib._bootstrap>:971: in _find_and_load\n    ???\n<frozen importlib._bootstrap>:955: in _find_and_load_unlocked\n    ???\n<frozen importlib._bootstrap>:665: in _load_unlocked\n    ???\n../../../.local/lib/python3.6/site-packages/_pytest/assertion/rewrite.py:171: in exec_module\n    exec(co, module.__dict__)\ntest_ECONT_proton_seu.py:5: in <module>\n    from daq_utils import to_hex, find_packets\n../daq_utils.py:7: in <module>\n    from econd_testvectors.ECOND_Emulator.SimpleEmulator.LoadI2C import Dict2Class\nE   ModuleNotFoundError: No module named 'econd_testvectors.ECOND_Emulator.SimpleEmulator'"
+    }
+  ],
+  "tests": [],
+  "FPGA-hexa-IP": "42",
+  "branch": "HEAD",
+  "commit_hash": "9588c265184ec140fedeba5cf3959251903d6fa6",
+  "remote_url": "ssh://git@gitlab.cern.ch:7999/hgcal-daq-sw/econd-sw.git",
+  "status": "",
+  "firmware_name": "econ-t2-tester-socket.bit\u0000",
+  "firmware_git_desc": "9e5953f-dirty",
+  "chip_number": null
+}

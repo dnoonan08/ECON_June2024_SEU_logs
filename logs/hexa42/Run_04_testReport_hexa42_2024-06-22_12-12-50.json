@@ -1,0 +1,53 @@
+{
+  "created": 1719076370.4549193,
+  "duration": 7.024414300918579,
+  "exitcode": 2,
+  "root": "/home/HGCAL_dev/SEU_test_Jun222024/econd-sw/test_radiation",
+  "environment": {
+    "Python": "3.6.8",
+    "Platform": "Linux-4.19.0-xilinx-v2019.2-aarch64-with-centos-7.9.2009-AltArch",
+    "Packages": {
+      "pytest": "7.0.1",
+      "py": "1.11.0",
+      "pluggy": "1.0.0"
+    },
+    "Plugins": {
+      "anyio": "3.3.1",
+      "metadata": "1.11.0",
+      "order": "1.1.0",
+      "repeat": "0.9.1",
+      "json-report": "1.5.0"
+    }
+  },
+  "summary": {
+    "total": 0,
+    "collected": 0
+  },
+  "collectors": [
+    {
+      "nodeid": "",
+      "outcome": "passed",
+      "result": [
+        {
+          "nodeid": "test_ECONT_proton_seu.py",
+          "type": "Module"
+        }
+      ]
+    },
+    {
+      "nodeid": "test_ECONT_proton_seu.py",
+      "outcome": "failed",
+      "result": [],
+      "longrepr": "../../../.local/lib/python3.6/site-packages/pluggy/_hooks.py:265: in __call__\n    return self._hookexec(self.name, self.get_hookimpls(), kwargs, firstresult)\n../../../.local/lib/python3.6/site-packages/pluggy/_manager.py:80: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n../../../.local/lib/python3.6/site-packages/anyio/pytest_plugin.py:95: in pytest_pycollect_makeitem\n    if collector.istestfunction(obj, name):\n../../../.local/lib/python3.6/site-packages/_pytest/python.py:386: in istestfunction\n    if self.funcnamefilter(name) or self.isnosetest(obj):\n../../../.local/lib/python3.6/site-packages/_pytest/python.py:380: in isnosetest\n    return safe_getattr(obj, \"__test__\", False) is True\n../../../.local/lib/python3.6/site-packages/_pytest/compat.py:326: in safe_getattr\n    from _pytest.outcomes import TEST_OUTCOME\nE   KeyboardInterrupt"
+    }
+  ],
+  "tests": [],
+  "FPGA-hexa-IP": "42",
+  "branch": "gec_seuprep_June2024",
+  "commit_hash": "4015218d76de61c3bca5829c203d40c408bd2f4e",
+  "remote_url": "ssh://git@gitlab.cern.ch:7999/hgcal-daq-sw/econd-sw.git",
+  "status": "?? test_radiation/data/\u0000",
+  "firmware_name": "econ-t2-tester-socket.bit\u0000",
+  "firmware_git_desc": "9e5953f-dirty",
+  "chip_number": null
+}
