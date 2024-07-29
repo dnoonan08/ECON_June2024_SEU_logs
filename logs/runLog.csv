@@ -1,0 +1,20 @@
+Run,Current [nA],Calib [p/cm2/MU],Measured Time [s],Measured MU,Energy [MeV],Computed Flux [p/cm2/s],Computed Fluence [p/cm2],Tot Fluence [p/cm2],Target fluence,Total Target Fluence,Expected flux,Computed Target time,Computed Target MU,Wobble,Exp/Obs Flux,Note
+5,10,3.56E+07,2,77,217,1.37E+09,2.74E+09,2.74E+09,5.00E+10,5.00E+10,2.02E+09,25,1,404,0.35 A ,1.47,Computed flux lower than expected by factor 2
+6,10,3.56E+07,52,1373,217,9.40E+08,4.89E+10,5.16E+10,5.00E+10,1.00E+11,2.02E+09,25,1,404,0.35 A ,2.15,Computed flux lower than expected by factor 2
+7,2.5,3.52E+07,120,1392,217,4.08E+08,4.90E+10,1.01E+11,5.00E+10,1.50E+11,5.42E+08,92,1,420,0.35 A ,1.33,Computed flux lower than expected by factor 1.3
+8,25,3.65E+07,21,1404,217,2.44E+09,5.12E+10,1.52E+11,5.00E+10,2.00E+11,4.98E+09,10,1,370,0.35 A ,2.04,Computed flux lower than expected by factor 2; NB: MU/s (from photo of Victor's screen) also lower by factor 2, which indicates calibration (p/cm2/MU) is GOOD
+9,25,3.65E+07,5,765,217,5.58E+09,2.79E+10,1.80E+11,5.00E+10,2.50E+11,4.98E+09,10,1,370,0.35 A ,0.89,Operator generated new lookup table and now things not working; time and flux unreliable
+10,25,3.65E+07,5,1280,217,9.34E+09,4.67E+10,2.27E+11,5.00E+10,3.00E+11,4.98E+09,10,1,370,0.35 A ,0.53,Operator generated new lookup table and now things not working; time and flux unreliable
+11,25,3.65E+07,24,3006,217,4.57E+09,1.10E+11,3.36E+11,1.00E+11,4.00E+11,4.98E+09,20,2,740,0.35 A ,1.0893,Things seem better now
+12,50,3.80E+07,51,13288,217,9.90E+09,5.05E+11,8.41E+11,5.00E+11,9.00E+11,1.08E+10,46,13,158,0.35 A ,1.0908,
+13,,,,,,,,8.41E+11,,,,,,,,Pre-beam errors
+14,25,2.14E+07,120,3027,217,5.40E+08,6.48E+10,9.06E+11,7.00E+10,9.70E+11,5.87E+08,119,3,271,1.5 A,1.0874,Test different wobble to make sure we understand calib; Beam stopped by RF spark
+,,,,,,,,9.06E+11,,,,,,,,Long stop for Danny to get new SD card
+15,50,2.22E+07,60,3006,217,1.11E+09,6.67E+10,9.73E+11,1.00E+11,1.07E+12,1.17E+09,85,4,505,1.5 A,1.0520,Beam stopped by RF spark
+16,100,4.17E+07,256,120214,217,1.96E+10,5.01E+12,5.99E+12,5.00E+12,6.07E+12,2.09E+10,239,119,904,0.35 A ,1.0673,
+17,100,,,,,,,5.99E+12,,6.07E+12,,,,,,Pre-beam errors in Hexa #42 because of RO-related issues
+18,100,,,,,,,5.99E+12,,6.07E+12,,,,,,Pre-beam errors in Hexa #42 because of RO-related issues
+19,100,4.17E+07,254,119979,217,1.97E+10,5.00E+12,1.10E+13,5.00E+12,1.11E+13,2.09E+10,239,119,904,0.35 A ,1.0611,Hexa # 42 is RO again, but we should now be able to keep running
+20,100,4.17E+07,514,240441,217,1.95E+10,1.00E+13,2.10E+13,1.00E+13,2.11E+13,2.09E+10,478,239,808,0.35 A ,1.0714,PRBS
+21,100,4.17E+07,641,296946,217,1.93E+10,1.24E+13,3.34E+13,1.24E+13,3.35E+13,2.09E+10,593,297,362,0.35 A ,1.0819,
+22,100,4.17E+07,212,99634,217,1.96E+10,4.15E+12,3.76E+13,4.17E+12,3.76E+13,2.09E+10,200,100,000,0.35 A ,1.0664,
